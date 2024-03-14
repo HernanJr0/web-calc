@@ -18,7 +18,7 @@ const theme = createTheme({
     },
 });
 
-const expression = document.querySelector("#exp")
+// const expression = document.querySelector("#exp")
 
 function Botao({ children }: Props) {
 
