@@ -1,0 +1,17 @@
+#display{
+    display: flex;
+    height:calc( 40vh - 25px);
+    background-color: #2a3845;
+    border-radius: 0 0 30px 30px;
+}
+
+#exp{
+    margin: auto 0 auto auto;
+    font-size: 60px;
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    color: #3584d2;
+    text-align: right;
+}

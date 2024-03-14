@@ -1,33 +1,43 @@
-import { Button, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
+import Botao from "./Botao";
+import { Backspace } from "@mui/icons-material";
 
 function Keyboard() {
   return (
-    <Grid>
+    <div id="kb">
+
       <Grid>
-        <Button>7</Button>
-        <Button>8</Button>
-        <Button>9</Button>
-        <Button>+</Button>
+        <Grid>
+          <Botao>7</Botao>
+          <Botao>8</Botao>
+          <Botao>9</Botao>
+        </Grid>
+        <Grid>
+          <Botao>4</Botao>
+          <Botao>5</Botao>
+          <Botao>6</Botao>
+        </Grid>
+        <Grid>
+          <Botao>1</Botao>
+          <Botao>2</Botao>
+          <Botao>3</Botao>
+        </Grid>
+        <Grid>
+          <Botao>0</Botao>
+          <Botao>.</Botao>
+          <Botao> <Backspace/> </Botao>
+        </Grid>
       </Grid>
+
+
       <Grid>
-        <Button>4</Button>
-        <Button>5</Button>
-        <Button>6</Button>
-        <Button>-</Button>
+        <Grid><Botao>/</Botao></Grid>
+        <Grid><Botao>*</Botao></Grid>
+        <Grid><Botao>-</Botao></Grid>
+        <Grid><Botao>+</Botao></Grid>
       </Grid>
-      <Grid>
-        <Button>1</Button>
-        <Button>2</Button>
-        <Button>3</Button>
-        <Button>*</Button>
-      </Grid>
-      <Grid>
-        <Button>0</Button>
-        <Button>.</Button>
-        <Button>=</Button>
-        <Button>/</Button>
-      </Grid>
-    </Grid>
+
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@ import Display from "./components/Display";
 function App() {
   return (
     <main>
-      <Card>
+      <Card id="card">
         <Typography sx={{ textAlign: "center" }}>Web Calc</Typography>
         <Display />
         <Keyboard />

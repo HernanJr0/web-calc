@@ -1,11 +1,19 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
+import "./index.css"
+
 
 function Display() {
+
+  
   return (
-    <Grid sx={{ display: "flex", justifyContent: "flex-end" }}>
-      <Typography sx={{ width: "auto" }}>Display</Typography>
+    <Grid id="display">
+
+      <input type="text" id="exp"/>
+      
     </Grid>
   );
 }
+
+
 
 export default Display;
