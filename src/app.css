@@ -15,9 +15,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 #card{
-  max-width: 520px;
+  max-width: 480px;
 }

@@ -7,7 +7,7 @@ function App() {
   return (
     <main>
       <Card id="card">
-        <Typography sx={{ textAlign: "center" }}>Web Calc</Typography>
+        <Typography sx={{ textAlign: "center", fontSize:"12px" }}>Web Calc</Typography>
         <Display />
         <Keyboard />
       </Card>

@@ -11,14 +11,14 @@ const theme = createTheme({
         values: {
             xs: 0, // phone
             sm: 300, // tablets
-            md: 520, // small laptop
+            md: 480, // small laptop
             lg: 900, // desktop
             xl: 1200 // large screens
         },
     },
 });
 
-const expression = document.querySelector("#exp")
+var expressao = document.querySelector("#exp")
 
 function Botao({ children }: Props) {
 
@@ -26,23 +26,25 @@ function Botao({ children }: Props) {
         <ThemeProvider theme={theme}>
             <Button
                 sx={{
-
                     minWidth: {
-                        xs: "calc(25vw - 5px)",
-                        md: "calc(130px - 5px)",
+                        xs: "calc(25vw - 1vh)",
+                        md: "calc(120px - 1vh)",
                     },
 
                     minHeight: {
-                        xs: "calc(15vh - 5px)"
+                        xs: "calc(14vh - 1vh)"
                     },
-                    margin: "2.5px",
+                    margin: ".5vh",
+                    padding: "0",
+                    borderRadius: "100px",
 
-                    borderRadius: "20px",
+                    backgroundColor:"#303030",
 
-                    fontSize: "30px",
+                    fontSize: "calc(4vh + 20px)",
                     fontFamily: "Product Sans",
                     lineHeight: 0
                 }}
+                /* onClick={ logica } */
             >
                 {children}
             </Button>
