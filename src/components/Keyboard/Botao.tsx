@@ -3,7 +3,7 @@ import { Button } from '@mui/material'
 import '../ProductSans-Medium.ttf'
 
 type Props = {
-    children: string
+    children: any
 }
 
 // const expression = document.querySelector("#exp")
