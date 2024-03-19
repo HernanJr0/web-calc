@@ -25,7 +25,12 @@ function Keyboard() {
         <Grid>
           <Botao>0</Botao>
           <Botao>.</Botao>
-          <Botao> <Backspace sx={{fontSize:"calc(4vh + 5px)"}}/> </Botao>
+          <Botao> <Backspace sx={{
+            fontSize: {
+              xs: "calc(3vh + 4vw)",
+              sm: "calc(4vh + 18px)"
+            },
+          }} /> </Botao>
         </Grid>
       </Grid>
 
