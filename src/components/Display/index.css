@@ -1,7 +1,7 @@
 #display{
     display: flex;
     height:calc( 44vh - 18px);
-    background-color: #2a3845;
+    background-color: #34495b;
     border-radius: 0 0 30px 30px;
 }
 
@@ -12,6 +12,6 @@
     outline: none;
     background: none;
     border: none;
-    color: #3584d2;
+    color: #90CAF9;
     text-align: right;
 }

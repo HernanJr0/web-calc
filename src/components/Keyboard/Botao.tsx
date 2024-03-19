@@ -1,6 +1,6 @@
 
 import { Button } from '@mui/material'
-import '../ProductSans-Medium.ttf'
+
 
 type Props = {
     children: any
@@ -13,7 +13,6 @@ function Botao({ children }: Props) {
     return (
         <Button
             disableElevation
-            variant='contained'
             sx={{
                 minWidth: {
                     xs: "calc(25vw - 1vh - 1vw)",
@@ -25,11 +24,11 @@ function Botao({ children }: Props) {
                     sm: "calc(14vh - 1vh - 6px)"
                 },
 
-                margin:{
+                margin: {
                     xs: "calc(.5vh + .5vw)",
                     sm: "calc(.5vh + 3px)"
                 },
-                
+
                 borderRadius: "100px",
 
                 padding: 0,
@@ -38,7 +37,7 @@ function Botao({ children }: Props) {
                     xs: "calc(4vh + 4vw + 8px)",
                     sm: "calc(4vh + 32px)"
                 },
-                fontFamily: "Product Sans",
+                fontFamily: 'Product Sans',
                 lineHeight: '20px'
             }}
         /* onClick={ logica } */
