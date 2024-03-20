@@ -1,14 +1,8 @@
-
 import { Button } from '@mui/material'
 
+const expression = document.querySelector("#exp")
 
-type Props = {
-    children: any
-}
-
-// const expression = document.querySelector("#exp")
-
-function Botao({ children }: Props) {
+function Botao(props: React.PropsWithChildren) {
 
     return (
         <Button
@@ -40,9 +34,21 @@ function Botao({ children }: Props) {
                 fontFamily: 'Product Sans',
                 lineHeight: '20px'
             }}
-        /* onClick={ logica } */
+            onClick={
+                () => {
+                    if (props.props != undefined) {
+                        switch (props.props) {
+                            case 'del':
+                                expression.value = expression.value.slice(0, -1)
+                                break;
+                        }
+                    } else {
+                        expression.value += props.children
+                    }
+                }
+            }
         >
-            {children}
+            {props.children}
         </Button>
     )
 }

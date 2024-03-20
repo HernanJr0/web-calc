@@ -8,7 +8,7 @@ function Display() {
   return (
     <Grid id="display">
 
-      <input type="text" id="exp"/>
+      <input type="text" id="exp" value="" onKeyDown={() => document.activeElement?.blur()}/>
       
     </Grid>
   );

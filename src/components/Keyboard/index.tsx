@@ -25,7 +25,7 @@ function Keyboard() {
         <Grid>
           <Botao>0</Botao>
           <Botao>.</Botao>
-          <Botao> <Backspace sx={{
+          <Botao props="del"> <Backspace sx={{
             fontSize: {
               xs: "calc(3vh + 4vw)",
               sm: "calc(4vh + 18px)"
