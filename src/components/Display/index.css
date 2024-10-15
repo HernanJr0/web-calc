@@ -1,6 +1,6 @@
 #display{
     display: flex;
-    height:calc( 44vh - 18px);
+    height:calc( 44dvh - 18px);
     background-color: #34495b;
     border-radius: 0 0 30px 30px;
 }
